@@ -3,13 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FE CashCalc: cashflow planning for IFAs, now in Nexus</title>
-<meta name="description" content="Model client cashflow with FE CashCalc. Cashflow planning for UK advisers and IFAs. CashCalc stays the planner; Nexus by FE fundinfo connects it to research.">
+<title>FE CashCalc: cashflow planning for IFAs, now in Nexus for Financial Advisors</title>
+<meta name="description" content="Model client cashflow with FE CashCalc. Cashflow planning for UK advisers and IFAs. CashCalc stays the planner; Nexus for Financial Advisors connects it to research.">
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#021C1A">
 
 <!--
-  v4 (16 Nov 2026): client asked for "Nexus for Financial Advisers" (adviser spelling) in place
+  v4 round 2 (16 Nov 2026): second client note, "Nexus for Financial Advisors" EVERYWHERE Nexus
+  appeared, spelled "Advisors" (client's latest instruction; earlier note said "Advisers").
+  Headings, eyebrows, FAQ questions, step tag, product mock, title/meta and every
+  "Nexus by FE fundinfo" now use the full name. Lines where the name would repeat straight
+  after a heading were reworded instead. No bare "Nexus" left in visible text. See ./CHANGES.md.
+  The round-1 note below is superseded where it says headings etc. were left alone.
+-->
+
+<!--
+  v4 (16 Nov 2026): client asked for "Nexus for Financial Advisors" (adviser spelling) in place
   of "Nexus". Body copy only: 3 places now use the full name, the other plain "Nexus" mentions
   were reworded so the long name doesn't repeat. NOT changed (by decision): headings, eyebrows,
   FAQ questions, CTAs, "Nexus by FE fundinfo", the step tag, the illustrative product UI and
@@ -214,6 +223,7 @@ p,li,h1,h2,h3,dt,dd,summary,span,label{overflow-wrap:break-word;}
   font-size:.8125rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
   color:var(--teal-700);
 }
+.eyebrow{text-wrap:balance;} /* v4: long eyebrows wrap evenly, no orphan word */
 .band-dark .eyebrow{color:var(--teal-400);}
 
 /* gradient underline under key words (reference's underlined H1 phrase) */
@@ -545,7 +555,9 @@ p,li,h1,h2,h3,dt,dd,summary,span,label{overflow-wrap:break-word;}
 .step .h3{font-size:1.125rem;}
 .step p{margin-top:6px;font-size:.9688rem;line-height:1.55;}
 .step--nexus{border-color:rgba(128,210,204,.45);background:linear-gradient(90deg, rgba(128,210,204,.2), rgba(255,255,255,.04));}
-.step__tag{display:inline-block;margin-left:8px;vertical-align:2px;font-size:.6875rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--night);background:var(--teal-400);border-radius:var(--radius-pill);padding:2px 9px;font-stretch:100%;}
+/* v4: tag now long; flex so a wrapped tag sits flush left, not indented */
+.step--nexus .h3{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;}
+.step__tag{display:inline-block;vertical-align:2px;font-size:.6875rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--night);background:var(--teal-400);border-radius:var(--radius-pill);padding:2px 9px;font-stretch:100%;}
 
 /* ============================================================
    12. PRICING + FAQ (light)
@@ -725,7 +737,7 @@ p,li,h1,h2,h3,dt,dd,summary,span,label{overflow-wrap:break-word;}
 
       <div class="bridge">
         <span class="bridge__mark"><svg><use href="#i-hub"/></svg></span>
-        <p><strong>FE CashCalc, now in Nexus by FE fundinfo.</strong> Keep the planner you know,
+        <p><strong>FE CashCalc, now in Nexus for Financial Advisors.</strong> Keep the planner you know,
           now linked to your fund research.</p>
       </div>
 
@@ -740,11 +752,11 @@ p,li,h1,h2,h3,dt,dd,summary,span,label{overflow-wrap:break-word;}
       <div class="mock__win">
         <div class="mock__bar">
           <span class="mock__dots" aria-hidden="true"><i></i><i></i><i></i></span>
-          <span class="mock__crumb"><b>Nexus</b><span>/</span>FE CashCalc<span>/</span>Lifetime cashflow</span>
+          <span class="mock__crumb"><b>Nexus for Financial Advisors</b><span>/</span>FE CashCalc<span>/</span>Lifetime cashflow</span>
         </div>
         <div class="mock__body">
           <div class="mock__rail" aria-hidden="true">
-            <span class="mock__rail-label">Nexus</span>
+            <span class="mock__rail-label">Nexus for Financial Advisors</span>
             <span class="mock__item is-on"><svg><use href="#i-chart"/></svg>FE CashCalc</span>
             <span class="mock__item"><svg><use href="#i-search"/></svg>FE Analytics</span>
             <span class="mock__item"><svg><use href="#i-doc"/></svg>Reports</span>
@@ -843,7 +855,7 @@ p,li,h1,h2,h3,dt,dd,summary,span,label{overflow-wrap:break-word;}
       </ul>
 
       <p class="note"><b>Planning and research, connected.</b> Build cashflow plans in CashCalc. It now sits inside
-        Nexus by FE fundinfo, which links your plans to fund research.</p>
+        Nexus for Financial Advisors, which links your plans to fund research.</p>
 
       <div class="cta-row">
         <div class="cta">
@@ -925,7 +937,7 @@ p,li,h1,h2,h3,dt,dd,summary,span,label{overflow-wrap:break-word;}
       </article>
     </div>
 
-    <p class="center after-cards">And inside Nexus for Financial Advisers, those plans now link to your fund research.</p>
+    <p class="center after-cards">And inside Nexus for Financial Advisors, those plans now link to your fund research.</p>
     <div class="cta-row">
       <div class="cta">
         <a href="#demo" class="btn">Book a demo <svg><use href="#i-arrow"/></svg></a>
@@ -965,13 +977,13 @@ p,li,h1,h2,h3,dt,dd,summary,span,label{overflow-wrap:break-word;}
 <section class="section band-light" id="nexus" aria-labelledby="nexus-title">
   <div class="container">
     <div class="head">
-      <span class="eyebrow">Planning inside Nexus</span>
-      <h2 id="nexus-title" class="h2">CashCalc stays the planner. Nexus connects it to research.</h2>
-      <p class="lead">FE CashCalc now sits inside Nexus by FE fundinfo. You keep the planner you know,
+      <span class="eyebrow">Planning inside Nexus for Financial Advisors</span>
+      <h2 id="nexus-title" class="h2">CashCalc stays the planner. Nexus for Financial Advisors connects it to research.</h2>
+      <p class="lead">You keep the planner you know,
         now linked to fund research in FE Analytics, so planning and research sit in one workflow.</p>
     </div>
 
-    <div class="flow" role="img" aria-label="Diagram: FE CashCalc and FE Analytics, connected through Nexus for Financial Advisers">
+    <div class="flow" role="img" aria-label="Diagram: FE CashCalc and FE Analytics, connected through Nexus for Financial Advisors">
       <div class="node">
         <span class="node__ico"><svg><use href="#i-chart"/></svg></span>
         <b>FE CashCalc</b><span>Your client's lifetime cashflow plan</span>
@@ -979,7 +991,7 @@ p,li,h1,h2,h3,dt,dd,summary,span,label{overflow-wrap:break-word;}
       <div class="flow__arrow"><svg><use href="#i-swap"/></svg></div>
       <div class="node node--hub">
         <span class="node__ico"><svg><use href="#i-hub"/></svg></span>
-        <b>Nexus for Financial Advisers</b><span>One connected workflow</span>
+        <b>Nexus for Financial Advisors</b><span>One connected workflow</span>
       </div>
       <div class="flow__arrow"><svg><use href="#i-swap"/></svg></div>
       <div class="node">
@@ -999,7 +1011,7 @@ p,li,h1,h2,h3,dt,dd,summary,span,label{overflow-wrap:break-word;}
         <p class="listcard__foot">Keep the planner you know.</p>
       </div>
       <div class="listcard listcard--accent">
-        <span class="eyebrow">What Nexus adds</span>
+        <span class="eyebrow">What Nexus for Financial Advisors adds</span>
         <ul class="checks">
           <li><span class="ico-check"><svg><use href="#i-check"/></svg></span>Move between your cashflow plan and fund research without switching systems</li>
           <li><span class="ico-check"><svg><use href="#i-check"/></svg></span>Recommendations from FE Analytics flow into FE CashCalc's tax-aware planning tools, with no re-keying</li>
@@ -1017,7 +1029,7 @@ p,li,h1,h2,h3,dt,dd,summary,span,label{overflow-wrap:break-word;}
   <div class="container">
     <div class="head">
       <span class="eyebrow">How it comes together</span>
-      <h2 id="steps-title" class="h2">Cashflow plans in Nexus, step by step</h2>
+      <h2 id="steps-title" class="h2">Step by step: cashflow plans in Nexus for Financial Advisors</h2>
     </div>
 
     <ol class="steps">
@@ -1038,7 +1050,7 @@ p,li,h1,h2,h3,dt,dd,summary,span,label{overflow-wrap:break-word;}
       </li>
       <li class="step step--nexus">
         <span class="step__ico"><span><svg><use href="#i-link"/></svg></span></span>
-        <div><h3 class="h3">4. Link the research <span class="step__tag">Nexus</span></h3>
+        <div><h3 class="h3">4. Link the research <span class="step__tag">Nexus for Financial Advisors</span></h3>
           <p>Bring fund recommendations from FE Analytics into the plan, with no re-keying, and run
             projections on the client's actual portfolio.</p></div>
       </li>
@@ -1094,13 +1106,13 @@ p,li,h1,h2,h3,dt,dd,summary,span,label{overflow-wrap:break-word;}
 
       <div class="faq">
         <details open>
-          <summary>Is FE CashCalc changing now it's in Nexus?<span class="faq__chev" aria-hidden="true"><svg><use href="#i-chev"/></svg></span></summary>
-          <div class="faq__a"><p>CashCalc stays the planner you know. What Nexus by FE fundinfo adds is the
+          <summary>Is FE CashCalc changing now it's in Nexus for Financial Advisors?<span class="faq__chev" aria-hidden="true"><svg><use href="#i-chev"/></svg></span></summary>
+          <div class="faq__a"><p>CashCalc stays the planner you know. What's new is the
             link to fund research in FE Analytics, so you can move between your cashflow plan and your
             research without switching systems.</p></div>
         </details>
         <details>
-          <summary>What does Nexus add to FE CashCalc?<span class="faq__chev" aria-hidden="true"><svg><use href="#i-chev"/></svg></span></summary>
+          <summary>What does Nexus for Financial Advisors add to FE CashCalc?<span class="faq__chev" aria-hidden="true"><svg><use href="#i-chev"/></svg></span></summary>
           <div class="faq__a"><p>Investment recommendations from FE Analytics flow into FE CashCalc's
             tax-aware planning tools without re-entering data. You can base growth forecasts on the asset
             allocation of real client holdings rather than generic growth rates, and run Monte Carlo
@@ -1138,9 +1150,9 @@ p,li,h1,h2,h3,dt,dd,summary,span,label{overflow-wrap:break-word;}
   <div class="container">
     <div class="head">
       <span class="eyebrow">Book a demo</span>
-      <h2 id="demo-title" class="h2">See CashCalc in Nexus</h2>
+      <h2 id="demo-title" class="h2">See CashCalc in Nexus for Financial Advisors</h2>
       <p class="lead">Arrange a call with one of our specialists. We'll show you FE CashCalc, and how it
-        links to fund research inside Nexus for Financial Advisers.</p>
+        links to your fund research.</p>
     </div>
 
     <div class="formcard">
